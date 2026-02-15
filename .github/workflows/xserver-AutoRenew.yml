@@ -38,7 +38,7 @@ jobs:
       - name: 🔐 检出私有仓库
         uses: actions/checkout@v4
         with:
-          repository: o2proyon/auto-weirdhost-private
+          repository: o2proyon/auto_xserver
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           ref: main
           path: ${{ github.repository_owner }}-${{ github.event.repository.name }}-${{ env.PROJECT_DIR }}
